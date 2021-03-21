@@ -2,7 +2,7 @@
 @name VT uDark
 @namespace github.com/bluelul/uservt
 @homepageURL https://github.com/bluelul/uservt/blob/master/vt.user.css
-@version 1.0.1
+@version 1.0.2
 @updateURL https://github.com/bluelul/uservt/raw/master/vt.user.css
 @description VT Dark Theme
 @author bluelul
@@ -75,7 +75,7 @@ body, .ZmMailMsgView, .MsgBody, .DwtListView, .RowOdd, .LoginScreen, .DwtHorizon
 .ZToolbarButtonBorder, .DwtButton, .ZButtonBorder, .addrBubble, .attachmentBubble, input[type="text"], input[type="password"], .form SELECT {
     background-color: rgba(255,255,255,0.08)!important;
 }
-.form .ZLoginButton:hover, #skin_container_search .ZmSearchToolbar { 
+#skin_container_search .ZmSearchToolbar { 
     background-color: rgba(255,255,255,0.2)!important;
 }
 /* text */
@@ -147,13 +147,31 @@ input[type="text"], input[type="password"] {
 .ImgSearch2 {
     background-position-y: -4401px!important;
 }
-.LoginScreen .Footer {
+.LoginScreen .Footer, .LoginScreen .postioning {
     transition: all 0.15s ease-in-out !important;
     opacity: 0 !important;
 }
-.LoginScreen .Footer:hover {
+.LoginScreen .Footer:hover, .LoginScreen .postioning:hover {
     transition: all 0.15s ease-in-out !important;
     opacity: 1 !important;
 }
-
+.ImgLoginBanner {
+    filter: invert(0.7) hue-rotate(190deg) saturate(6.5) !important;
+}
+#lbUsername, #lbPassword, #lbRemember {
+    color: var(--whiteC3) !important;
+}
+#lbTtitle, #space, #lbVersion {
+    display: none !important;
+}
+.form .ZLoginButton:hover {
+    background-color: #cf2b2b !important;
+}
+.checkmark {
+    border-color: transparent !important;
+    background-color: var(--whiteC4) !important;
+}
+.container input:checked ~ .checkmark {
+    background-color: #ee0033 !important;
+}
 }
