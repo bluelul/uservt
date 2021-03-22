@@ -2,7 +2,7 @@
 @name VT uDark
 @namespace github.com/bluelul/uservt
 @homepageURL https://github.com/bluelul/uservt/blob/main/vt.user.css
-@version 1.0.2
+@version 1.0.3
 @updateURL https://github.com/bluelul/uservt/raw/main/vt.user.css
 @description VT Dark Theme
 @author bluelul
@@ -38,9 +38,9 @@ body:hover {
 --whiteC3: #a2a2a2;
 --whiteC4: #757575;
 
---mainWhite: #00aab2;
---mainMid: #007f85;
---mainDark: #005559;
+--mainWhite: #cc4545;
+--mainMid: #9e0000;
+--mainDark: #820000;
 }
 /* background */
 body, .ZmMailMsgView, .MsgBody, .DwtListView, .RowOdd, .LoginScreen, .DwtHorizontalSash, .DwtListView-Column, .ZmMailMsgView .MsgHeader, .ZmMailMsgView .MsgHeaderTable, .MessageHeaderAttachments, #skin_tr_toolbar>TD, #skin_container_tree, .overviewHeader TD, .overviewHeader-actioned TD, #skin_container_tree_footer, .ZmPrefView, .ZOptionsSectionMain, .ZmContactSplitView, .ZmContactView, .ZmEditContactView, .ZmContactInfoView, .ZmContactSimpleView, .ZmBriefcaseDetailListView, .ZmPreviewView, #skin_container_splash_screen, #skin_outer, .calendar_view, .ZmComposeView, .addrBubbleContainer, .attBubbleContainer, .ZmComposeView .subjectField, .defaultSkin table.mceLayout tr.mceFirst td, .VeilOverlay table, .WindowInnerContainer, .LightWindowOuterContainer, .LightWindowInnerContainer, .ZmApptComposeView, .LoginScreen .ZLoginInfoMessage {
