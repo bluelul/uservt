@@ -2,7 +2,7 @@
 @name VT uDark
 @namespace github.com/bluelul/uservt
 @homepageURL https://github.com/bluelul/uservt/blob/main/vt.user.css
-@version 1.0.4
+@version 1.0.5
 @updateURL https://github.com/bluelul/uservt/raw/main/vt.user.css
 @description VT Dark Theme
 @author bluelul
@@ -78,6 +78,7 @@ body, .ZmMailMsgView, .MsgBody, .DwtListView, .RowOdd, .LoginScreen, .DwtHorizon
 #skin_container_search .ZmSearchToolbar { 
     background-color: rgba(255,255,255,0.2)!important;
 }
+
 /* text */
 .Row .ZmConvListFragment, .Conv2MsgHeader .ZmConvListFragment, .Row .Row-Selected .ZmConvListFragment, .SubjectDoubleRow .ZmConvListFragment {
     color: var(--whiteC0) !important;
@@ -173,5 +174,10 @@ input[type="text"], input[type="password"] {
 }
 .container input:checked ~ .checkmark {
     background-color: #ee0033 !important;
+}
+    
+.ImgMsgUnread {
+    background: url(/img/zimbra.png?v=141103155018) 0px -4332px no-repeat!important;
+    filter: hue-rotate(137deg) !important;
 }
 }
