@@ -2,7 +2,7 @@
 @name VT uDark
 @namespace github.com/bluelul/uservt
 @homepageURL https://github.com/bluelul/uservt/blob/main/vt.user.css
-@version 1.0.5
+@version 1.0.6
 @updateURL https://github.com/bluelul/uservt/raw/main/vt.user.css
 @description VT Dark Theme
 @author bluelul
@@ -125,7 +125,7 @@ FIELDSET {
     border-radius: 6px!important;
 }
 .MsgBody, .defaultSkin iframe {
-    filter:invert(0.886) hue-rotate(180deg) saturate(1.3) blur(0.4px)!important;
+    filter:invert(0.886) hue-rotate(180deg) saturate(1.3)!important;
 }
 .defaultSkin .mceButton {
     filter:invert(0.9) hue-rotate(180deg) saturate(1.3) blur(0.4px)!important;
