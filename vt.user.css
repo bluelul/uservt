@@ -2,7 +2,7 @@
 @name VT uDark
 @namespace github.com/bluelul/uservt
 @homepageURL https://github.com/bluelul/uservt/blob/main/vt.user.css
-@version 1.0.8
+@version 1.0.9
 @updateURL https://github.com/bluelul/uservt/raw/main/vt.user.css
 @description VT Dark Theme
 @author bluelul
@@ -62,7 +62,7 @@ body:hover {
     .Row-selected:hover, .DwtTreeItem-selected:hover, .DwtTreeItem-selected-focused:hover, .ZToolbarButtonBorder:hover, .DwtButton-hover, .addrBubble-selected:hover  {
         background-color: var(--mainMid)!important;
     }
-    .overviewHeader, .overviewHeader-actioned, .DwtTreeItemLevel1ChildDiv, .DwtCalendar, .DwtCalendarDow, #UnknownPersonSlide_Frame, .defaultSkin .mceListBox .mceText, .defaultSkin table.mceListBoxEnabled:hover .mceOpen, .defaultSkin .mceListBoxHover .mceOpen, .defaultSkin .mceListBoxSelected .mceOpen, .DwtChooserListView, #skin_container_search .ZButtonBorder, #zi_search_inputfield, .ZmSearchResultsToolBar, .ZmSearchResultsFilterPanel, .DwtCalendarWeekNoTitle, .calendar_header_allday_separator, .ZmDayTabMarginDiv, .calendar_time_selection, .calendar_month_day_item_row-Selected {
+    .overviewHeader, .overviewHeader-actioned, .DwtTreeItemLevel1ChildDiv, .DwtCalendar, .DwtCalendarDow, #UnknownPersonSlide_Frame, .defaultSkin .mceListBox .mceText, .defaultSkin table.mceListBoxEnabled:hover .mceOpen, .defaultSkin .mceListBoxHover .mceOpen, .defaultSkin .mceListBoxSelected .mceOpen, .DwtChooserListView, #skin_container_search .ZButtonBorder, #zi_search_inputfield, .ZmSearchResultsToolBar, .ZmSearchResultsFilterPanel, .DwtCalendarWeekNoTitle, .calendar_header_allday_separator, .ZmDayTabMarginDiv, .calendar_time_selection, .calendar_month_day_item_row-Selected, .InvHeaderTable {
         background-color: transparent!important;
     }
     .ZSelected .ZAppTabBorder, .ZToolbarButtonBorder, .DwtButton, .DwtButton-active, .DwtButton-hover, .ZButtonBorder, .LoginScreen, .SplashScreen {
