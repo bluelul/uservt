@@ -2,7 +2,7 @@
 @name VT uDark
 @namespace github.com/bluelul/uservt
 @homepageURL https://github.com/bluelul/uservt/blob/main/vt.user.css
-@version 1.0.6
+@version 1.0.7
 @updateURL https://github.com/bluelul/uservt/raw/main/vt.user.css
 @description VT Dark Theme
 @author bluelul
@@ -21,163 +21,200 @@ body:hover {
     filter: none !important;
 }
 */
-:root {
---darkC0x: #101010;    
---darkC0:  #171717;
---darkC01: #191919;
---darkC1:  #1d1d1d;
---darkC2:  #212121;
---darkC23: #242424;
---darkC3:  #282828;
---darkC4:  #2f2f2f;
---darkC5:  #3f3f3f;
---whiteC0: #fff;
---whiteC1: #e7e7e7;
---whiteC2: #e0e0e0;
---whiteC23:#d0d0d0;
---whiteC3: #a2a2a2;
---whiteC4: #757575;
+    :root {
+    --darkC0x: #101010;    
+    --darkC0:  #171717;
+    --darkC01: #191919;
+    --darkC1:  #1d1d1d;
+    --darkC2:  #212121;
+    --darkC23: #242424;
+    --darkC3:  #282828;
+    --darkC4:  #2f2f2f;
+    --darkC5:  #3f3f3f;
+    --whiteC0: #fff;
+    --whiteC1: #e7e7e7;
+    --whiteC2: #e0e0e0;
+    --whiteC23:#d0d0d0;
+    --whiteC3: #a2a2a2;
+    --whiteC4: #757575;
 
---mainWhite: #cc4545;
---mainMid: #9e0000;
---mainDark: #820000;
-}
-/* background */
-body, .ZmMailMsgView, .MsgBody, .DwtListView, .RowOdd, .LoginScreen, .DwtHorizontalSash, .DwtListView-Column, .ZmMailMsgView .MsgHeader, .ZmMailMsgView .MsgHeaderTable, .MessageHeaderAttachments, #skin_tr_toolbar>TD, #skin_container_tree, .overviewHeader TD, .overviewHeader-actioned TD, #skin_container_tree_footer, .ZmPrefView, .ZOptionsSectionMain, .ZmContactSplitView, .ZmContactView, .ZmEditContactView, .ZmContactInfoView, .ZmContactSimpleView, .ZmBriefcaseDetailListView, .ZmPreviewView, #skin_container_splash_screen, #skin_outer, .calendar_view, .ZmComposeView, .addrBubbleContainer, .attBubbleContainer, .ZmComposeView .subjectField, .defaultSkin table.mceLayout tr.mceFirst td, .VeilOverlay table, .WindowInnerContainer, .LightWindowOuterContainer, .LightWindowInnerContainer, .ZmApptComposeView, .LoginScreen .ZLoginInfoMessage, .InvHeaderDiv {
-    background-color: var(--darkC1)!important;
-}
-.DwtCalendarDay-selected, .DwtToolTip, .DwtMenu, .ActionMenu, .DwtSelectMenu, .ZmAutocompleteListView, .shortcutKeys-prefs, .ZOptionsSectionTabView .ZTabBorder {
-    background-color: var(--darkC4)!important;
-}
-.addrBubble:hover, .ZHover .ZMenuItemBorder, .acRow-selected {
-    background-color: var(--darkC5)!important;
-}
-.RowOdd:hover, .RowEven:hover, .DwtTreeItem:hover, .DwtCalendarDay:hover, .DwtCalendarDay-hover, .shortcutDescription-prefs, .WindowOuterContainer {
-    background-color: var(--darkC3)!important;
-}
+    --mainWhite: #cc4545;
+    --mainMid: #9e0000;
+    --mainDark: #820000;
+    }
+    /* background */
+    body, .ZmMailMsgView, .MsgBody, .DwtListView, .RowOdd, .LoginScreen, .DwtHorizontalSash, .DwtListView-Column, .ZmMailMsgView .MsgHeader, .ZmMailMsgView .MsgHeaderTable, .MessageHeaderAttachments, #skin_tr_toolbar>TD, #skin_container_tree, .overviewHeader TD, .overviewHeader-actioned TD, #skin_container_tree_footer, .ZmPrefView, .ZOptionsSectionMain, .ZmContactSplitView, .ZmContactView, .ZmEditContactView, .ZmContactInfoView, .ZmContactSimpleView, .ZmBriefcaseDetailListView, .ZmPreviewView, #skin_container_splash_screen, #skin_outer, .calendar_view, .ZmComposeView, .addrBubbleContainer, .attBubbleContainer, .ZmComposeView .subjectField, .defaultSkin table.mceLayout tr.mceFirst td, .VeilOverlay table, .WindowInnerContainer, .LightWindowOuterContainer, .LightWindowInnerContainer, .ZmApptComposeView, .LoginScreen .ZLoginInfoMessage, .InvHeaderDiv, .dialogOverview {
+        background-color: var(--darkC1)!important;
+    }
+    .DwtCalendarDay-selected, .DwtToolTip, .DwtMenu, .ActionMenu, .DwtSelectMenu, .ZmAutocompleteListView, .shortcutKeys-prefs, .ZOptionsSectionTabView .ZTabBorder {
+        background-color: var(--darkC4)!important;
+    }
+    .addrBubble:hover, .ZHover .ZMenuItemBorder, .acRow-selected, .ZActive .ZMenuItemBorder, .DwtCalendarDay-active {
+        background-color: var(--darkC5)!important;
+    }
+    .RowOdd:hover, .RowEven:hover, .DwtTreeItem:hover, .DwtCalendarDay:hover, .DwtCalendarDay-hover, .shortcutDescription-prefs, .WindowOuterContainer, .ZTreeItemCheckbox, .ZActive .ZAppTabBorder {
+        background-color: var(--darkC3)!important;
+    }
 
-.Row-selected, .DwtTreeItem-selected, .DwtTreeItem-selected-focused, .DwtCalendarDay-today, .DwtButton-active, .addrBubble-selected, .shortcutListHeader-prefs, .ZOptionsSectionTabView .ZSelected .ZTabBorder {
-    background-color: var(--mainDark)!important;
-}
-.Row-selected:hover, .DwtTreeItem-selected:hover, .DwtTreeItem-selected-focused:hover, .ZToolbarButtonBorder:hover, .DwtButton-hover, .addrBubble-selected:hover  {
-    background-color: var(--mainMid)!important;
-}
-.overviewHeader, .overviewHeader-actioned, .DwtTreeItemLevel1ChildDiv, .DwtCalendar, .DwtCalendarDow, #UnknownPersonSlide_Frame, .defaultSkin .mceListBox .mceText, .defaultSkin table.mceListBoxEnabled:hover .mceOpen, .defaultSkin .mceListBoxHover .mceOpen, .defaultSkin .mceListBoxSelected .mceOpen, .DwtChooserListView, #skin_container_search .ZButtonBorder, #zi_search_inputfield, .ZmSearchResultsToolBar, .ZmSearchResultsFilterPanel {
-    background-color: transparent!important;
-}
-.ZSelected .ZAppTabBorder, .ZToolbarButtonBorder, .DwtButton, .DwtButton-active, .DwtButton-hover, .ZButtonBorder, .LoginScreen, .SplashScreen {
-    background-image: none!important;
-}
+    .Row-selected, .DwtTreeItem-selected, .DwtTreeItem-selected-focused, .DwtCalendarDay-today, .DwtButton-active, .addrBubble-selected, .shortcutListHeader-prefs, .ZOptionsSectionTabView .ZSelected .ZTabBorder {
+        background-color: var(--mainDark)!important;
+    }
+    .Row-selected:hover, .DwtTreeItem-selected:hover, .DwtTreeItem-selected-focused:hover, .ZToolbarButtonBorder:hover, .DwtButton-hover, .addrBubble-selected:hover  {
+        background-color: var(--mainMid)!important;
+    }
+    .overviewHeader, .overviewHeader-actioned, .DwtTreeItemLevel1ChildDiv, .DwtCalendar, .DwtCalendarDow, #UnknownPersonSlide_Frame, .defaultSkin .mceListBox .mceText, .defaultSkin table.mceListBoxEnabled:hover .mceOpen, .defaultSkin .mceListBoxHover .mceOpen, .defaultSkin .mceListBoxSelected .mceOpen, .DwtChooserListView, #skin_container_search .ZButtonBorder, #zi_search_inputfield, .ZmSearchResultsToolBar, .ZmSearchResultsFilterPanel, .DwtCalendarWeekNoTitle {
+        background-color: transparent!important;
+    }
+    .ZSelected .ZAppTabBorder, .ZToolbarButtonBorder, .DwtButton, .DwtButton-active, .DwtButton-hover, .ZButtonBorder, .LoginScreen, .SplashScreen {
+        background-image: none!important;
+    }
+    .ZHover .ZAppTabBorder {
+        background-color: rgba(255,255,255,0.08)!important;
+    }
+    .ZSelected .ZAppTabBorder, .LoginScreen, .SplashScreen {
+        background-color: var(--darkC1)!important;
+    }
+    .ZToolbarButtonBorder, .DwtButton, .ZButtonBorder, .addrBubble, .attachmentBubble, input[type="text"], input[type="password"], .form SELECT {
+        background-color: rgba(255,255,255,0.08)!important;
+    }
+    #skin_container_search .ZmSearchToolbar { 
+        background-color: rgba(255,255,255,0.2)!important;
+    }
 
-.ZSelected .ZAppTabBorder, .LoginScreen, .SplashScreen {
-    background-color: var(--darkC1)!important;
-}
-.ZToolbarButtonBorder, .DwtButton, .ZButtonBorder, .addrBubble, .attachmentBubble, input[type="text"], input[type="password"], .form SELECT {
-    background-color: rgba(255,255,255,0.08)!important;
-}
-#skin_container_search .ZmSearchToolbar { 
-    background-color: rgba(255,255,255,0.2)!important;
-}
+    /* text */
+    .Row .ZmConvListFragment, .Conv2MsgHeader .ZmConvListFragment, .Row .Row-Selected .ZmConvListFragment, .SubjectDoubleRow .ZmConvListFragment {
+        color: var(--whiteC0) !important;
+    }
+    .selected TD, .Row-selected TD, .Row-selected-dragProxy TD, .Row-selected-disabled TD, .Row TD, .RowDouble TD, .DwtListView-Column td, TD, .Text, .calendar_grid_body_time_text, .calendar_heading_day, .calendar_heading_day-selected, .calendar_heading_day_today, .calendar_heading_day_today-selected, .addrBubble, .addrBubble-selected, .addrBubble-actioned, .attachmentBubble, .DwtToolTipBody, .addrBubbleContainer INPUT, .attBubbleContainer INPUT, .ZmComposeView .subjectField, input[type="text"], input[type="password"], .form .ZLoginButton, .form SELECT, .ZmSearchResultsFilterPanel .header, div, .FakeAnchor:hover {
+        color: var(--whiteC2) !important;
+    }
+    .DwtListView-Column td, .LoginScreen .ZLoginInfoMessage, .FakeAnchor, .DwtCalendarWeekNo {
+        color: var(--whiteC3) !important;
+    }
+    .AttLink:hover, .Row-selected .AttLink:hover, .AttLink:link, .AttLink:visited, .MsgHeaderTable .Object, .DwtCalendarDow, a:link, a:visited, .ZmAutocompleteListView .LinkText, .DwtCalendarWeekNoTitle {
+        color: var(--mainWhite) !important;
+    }
+    LEGEND, a:link, a:visited {
+        color: var(--mainMid) !important;
+    }
+    .AttLink:hover, .Row-selected .AttLink:hover, .AttLink:link, .AttLink:visited, .FakeAnchor, a:link, a:visited {
+        text-decoration: none!important;
+    }
+    /* border */
+    .RowDouble, .RowDouble>TABLE, .MessageHeaderAttachments, #skin_tr_toolbar>TD, .ZmMailMsgView, .DwtListView, .ZToolbarButtonBorder, .overviewHeader>TABLE, .overviewHeader-actioned>TABLE, #skin_container_tree, .ZSelected .ZAppTabBorder, #skin_container_tree_footer, .DwtCalendarDow, .DwtCalendarDay-hover, .DwtTreeItem-selected, .ZmPrefView, .DwtCalendarDay-today, .ZmContactSplitView, .ZmContactView, .ZmEditContactView, .ZmContactInfoView, .ZmContactSimpleView, .AlphabetBarTable .DwtButton, .AlphabetBarTable .DwtButton-hover, .AlphabetBarTable .DwtButton-active, .ZmBriefcaseDetailListView, .ZmPreviewView, .ZButtonBorder, .ZmMailMsgView .MsgHeader, .ZmMailMsgView .MsgHeaderTable, .addrBubble, .addrBubble-selected, .addrBubble-actioned, .attachmentBubble, .DwtToolTip, .horizSep, .DwtMenu, .ActionMenu, .DwtSelectMenu, .ZMenuItemBorder, .addrBubbleContainer, .attBubbleContainer, .ZmComposeView .subjectField, .defaultSkin table.mceLayout tr.mceFirst td, .defaultSkin table.mceLayout, .defaultSkin .mceIframeContainer, .defaultSkin .mceButton, .defaultSkin table.mceListBoxEnabled:hover .mceText, .defaultSkin .mceListBoxHover .mceText, .defaultSkin .mceListBoxSelected .mceText, .defaultSkin table.mceListBoxEnabled:hover .mceOpen, .defaultSkin .mceListBoxHover .mceOpen, .defaultSkin .mceListBoxSelected .mceOpen, .defaultSkin .mceListBox .mceOpen, .defaultSkin .mceListBox .mceText, .defaultSkin .mceSplitButton a.mceAction, .defaultSkin .mceSplitButton a.mceOpen, .ZmAutocompleteListView,  .ZmAutocompleteListView TD, .shortcutListHeaderTd-prefs, .shortcutDescription-prefs, .shortcutKeys-prefs, .Row, .ZOptionsSectionTabView .ZSelected .ZTabBorder, .ZOptionsSectionTabView .ZTabBorder, .WindowOuterContainer, .WindowInnerContainer, .form .ZLoginButton, .form SELECT, .InvHeaderTable, .DwtCalendarWeekNoTitle, .DwtCalendarDay-active, input[type="text"], input[type="password"], #skin_spacing_app_row table {
+        border-color: transparent!important;
+    }
+    FIELDSET, .dialogOverview, .ZWidget, .ZWidget *, .ZOptionsSectionTabView .ZmPreferencesPage, .ZOptionsSectionTabView .ZSelectedPrev .ZTabBorder {
+        border-color: var(--darkC4);
+/*         border-color: var(--mainDark) */
+    }
+    .acRow {
+        border: 0px solid var(--mainDark)!important;
+    }
+    .ZMenuItem-Separator {
+        border-color: var(--darkC5) !important;
+    }
+    .ZTreeItemCheckbox {
+        border: 1px solid var(--darkC5) !important;
+    }
+    /* other */
+    .AppSash-horiz .DwtHorizontalSash {
+        margin-left: 0px!important;
+    }
 
-/* text */
-.Row .ZmConvListFragment, .Conv2MsgHeader .ZmConvListFragment, .Row .Row-Selected .ZmConvListFragment, .SubjectDoubleRow .ZmConvListFragment {
-    color: var(--whiteC0) !important;
-}
-.selected TD, .Row-selected TD, .Row-selected-dragProxy TD, .Row-selected-disabled TD, .Row TD, .RowDouble TD, .DwtListView-Column td, TD, .Text, .calendar_grid_body_time_text, .calendar_heading_day, .calendar_heading_day-selected, .calendar_heading_day_today, .calendar_heading_day_today-selected, .addrBubble, .addrBubble-selected, .addrBubble-actioned, .attachmentBubble, .DwtToolTipBody, .addrBubbleContainer INPUT, .attBubbleContainer INPUT, .ZmComposeView .subjectField, input[type="text"], input[type="password"], .form .ZLoginButton, .form SELECT, .ZmSearchResultsFilterPanel .header, div  {
-    color: var(--whiteC2) !important;
-}
-.DwtListView-Column td, .LoginScreen .ZLoginInfoMessage {
-    color: var(--whiteC3) !important;
-}
-.AttLink:hover, .Row-selected .AttLink:hover, .AttLink:link, .AttLink:visited, .MsgHeaderTable .Object, .DwtCalendarDow, .FakeAnchor:hover, a:link, a:visited, .ZmAutocompleteListView .LinkText {
-    color: var(--mainWhite) !important;
-}
-LEGEND, .FakeAnchor, a:link, a:visited {
-    color: var(--mainMid) !important;
-}
-.AttLink:hover, .Row-selected .AttLink:hover, .AttLink:link, .AttLink:visited, .FakeAnchor, a:link, a:visited {
-    text-decoration: none!important;
-}
-/* border */
-.RowDouble, .RowDouble>TABLE, .MessageHeaderAttachments, #skin_tr_toolbar>TD, .ZmMailMsgView, .DwtListView, .ZToolbarButtonBorder, .overviewHeader>TABLE, .overviewHeader-actioned>TABLE, #skin_container_tree, .ZSelected .ZAppTabBorder, #skin_container_tree_footer, .DwtCalendarDow, .DwtCalendarDay-hover, .DwtTreeItem-selected, .ZmPrefView, .DwtCalendarDay-today, .ZmContactSplitView, .ZmContactView, .ZmEditContactView, .ZmContactInfoView, .ZmContactSimpleView, .AlphabetBarTable .DwtButton, .AlphabetBarTable .DwtButton-hover, .AlphabetBarTable .DwtButton-active, .ZmBriefcaseDetailListView, .ZmPreviewView, .ZButtonBorder, .ZmMailMsgView .MsgHeader, .ZmMailMsgView .MsgHeaderTable, .addrBubble, .addrBubble-selected, .addrBubble-actioned, .attachmentBubble, .DwtToolTip, .horizSep, .DwtMenu, .ActionMenu, .DwtSelectMenu, .ZMenuItemBorder, .addrBubbleContainer, .attBubbleContainer, .ZmComposeView .subjectField, .defaultSkin table.mceLayout tr.mceFirst td, .defaultSkin table.mceLayout, .defaultSkin .mceIframeContainer, .defaultSkin .mceButton, .defaultSkin table.mceListBoxEnabled:hover .mceText, .defaultSkin .mceListBoxHover .mceText, .defaultSkin .mceListBoxSelected .mceText, .defaultSkin table.mceListBoxEnabled:hover .mceOpen, .defaultSkin .mceListBoxHover .mceOpen, .defaultSkin .mceListBoxSelected .mceOpen, .defaultSkin .mceListBox .mceOpen, .defaultSkin .mceListBox .mceText, .defaultSkin .mceSplitButton a.mceAction, .defaultSkin .mceSplitButton a.mceOpen, .ZmAutocompleteListView,  .ZmAutocompleteListView TD, .shortcutListHeaderTd-prefs, .shortcutDescription-prefs, .shortcutKeys-prefs, .Row, .ZOptionsSectionTabView .ZSelected .ZTabBorder, .ZOptionsSectionTabView .ZTabBorder, .WindowOuterContainer, .WindowInnerContainer, input[type="text"], input[type="password"], .form .ZLoginButton, .form SELECT, .InvHeaderTable {
-    border: transparent!important;
-}
-FIELDSET {
-    border-color: var(--mainDark)
-}
-.acRow {
-    border: 0px solid var(--mainDark)!important;
-}
-/* other */
-.AppSash-horiz .DwtHorizontalSash {
-    margin-left: 0px!important;
-}
+    #skin_spacing_tree {
+        padding-bottom: 0px !important;
+    }
+    .ImgPrefsHeader_L, .ImgPrefsHeader_R {
+        width: 0px!important;
+    }
+    .ZOptionsHeader {
+        padding: 4px 9px 6px 14px!important;
+        background: var(--mainMid)!important;
+        border-radius: 6px!important;
+    }
+    .MsgBody, .defaultSkin iframe {
+        filter:invert(0.886) hue-rotate(180deg) saturate(1.3)!important;
+    }
+    .defaultSkin .mceButton {
+        filter:invert(0.9) hue-rotate(180deg) saturate(1.3) blur(0.4px)!important;
+    }
+    .DwtToolTip, .DwtMenu, .ActionMenu, .DwtSelectMenu, .ZmAutocompleteListView, .WindowInnerContainer, .WindowOuterContainer {
+        box-shadow: 5px 5px 15px var(--darkC2)!important;
+    }
+    .addrBubbleContainer, .ZmComposeView .subjectField {
+        border-bottom: 1px dashed var(--mainMid)!important;
+    }
+    input.subjectField, input[type="text"], input[type="password"] {
+        outline-width:0px !important;
+    }
+    input[type="text"], input[type="password"] {
+        padding: 0px 10px !important;
+        border-radius: 5px !important;
+    }
+    .form .ZLoginButton {
+        box-shadow:none!important;
+    }
+    .ImgSearch2 {
+        background-position-y: -4401px!important;
+    }
+    .LoginScreen .Footer, .LoginScreen .postioning {
+        transition: all 0.15s ease-in-out !important;
+        opacity: 0 !important;
+    }
+    .LoginScreen .Footer:hover, .LoginScreen .postioning:hover {
+        transition: all 0.15s ease-in-out !important;
+        opacity: 1 !important;
+    }
+    .ImgLoginBanner {
+        filter: invert(0.7) hue-rotate(190deg) saturate(6.5) !important;
+    }
+    #lbUsername, #lbPassword, #lbRemember {
+        color: var(--whiteC3) !important;
+    }
+    #lbTtitle, #space, #lbVersion {
+        display: none !important;
+    }
+    .form .ZLoginButton:hover {
+        background-color: #cf2b2b !important;
+    }
+    .checkmark {
+        border-color: transparent !important;
+        background-color: var(--whiteC4) !important;
+    }
+    .container input:checked ~ .checkmark {
+        background-color: #ee0033 !important;
+    }
 
-#skin_spacing_tree {
-    padding-bottom: 0px !important;
-}
-.ImgPrefsHeader_L, .ImgPrefsHeader_R {
-    width: 0px!important;
-}
-.ZOptionsHeader {
-    padding: 4px 9px 6px 14px!important;
-    background: var(--mainMid)!important;
-    border-radius: 6px!important;
-}
-.MsgBody, .defaultSkin iframe {
-    filter:invert(0.886) hue-rotate(180deg) saturate(1.3)!important;
-}
-.defaultSkin .mceButton {
-    filter:invert(0.9) hue-rotate(180deg) saturate(1.3) blur(0.4px)!important;
-}
-.DwtToolTip, .DwtMenu, .ActionMenu, .DwtSelectMenu, .ZmAutocompleteListView, .WindowInnerContainer, .WindowOuterContainer {
-    box-shadow: 5px 5px 15px var(--darkC2)!important;
-}
-.addrBubbleContainer, .ZmComposeView .subjectField {
-    border-bottom: 1px dashed var(--mainMid)!important;
-}
-input.subjectField, input[type="text"], input[type="password"] {
-    outline-width:0px !important;
-}
-input[type="text"], input[type="password"] {
-    padding: 0px 10px !important;
-}
-.form .ZLoginButton {
-    box-shadow:none!important;
-}
-.ImgSearch2 {
-    background-position-y: -4401px!important;
-}
-.LoginScreen .Footer, .LoginScreen .postioning {
-    transition: all 0.15s ease-in-out !important;
-    opacity: 0 !important;
-}
-.LoginScreen .Footer:hover, .LoginScreen .postioning:hover {
-    transition: all 0.15s ease-in-out !important;
-    opacity: 1 !important;
-}
-.ImgLoginBanner {
-    filter: invert(0.7) hue-rotate(190deg) saturate(6.5) !important;
-}
-#lbUsername, #lbPassword, #lbRemember {
-    color: var(--whiteC3) !important;
-}
-#lbTtitle, #space, #lbVersion {
-    display: none !important;
-}
-.form .ZLoginButton:hover {
-    background-color: #cf2b2b !important;
-}
-.checkmark {
-    border-color: transparent !important;
-    background-color: var(--whiteC4) !important;
-}
-.container input:checked ~ .checkmark {
-    background-color: #ee0033 !important;
-}
+    .ImgMsgUnread {
+        background: url(/img/zimbra.png?v=141103155018) 0px -4332px no-repeat!important;
+        filter: hue-rotate(137deg) !important;
+    }
+    .ImgMenuCheck, .ImgSelectPullDownArrow, .ImgFwdArrowSmall, .ImgFastFwdArrowSmall, .ImgRevArrowSmall, .ImgFastRevArrowSmall, .ImgDownArrowSmall, .ImgColumnDownArrow {
+        filter: invert(0.8) !important;
+    }
+    .ImgColumnDownArrow {
+        background: url(/img/zimbra.png?v=141103155018) 0px -1617px no-repeat !important;
+        height: 4px !important;
+    }
     
-.ImgMsgUnread {
-    background: url(/img/zimbra.png?v=141103155018) 0px -4332px no-repeat!important;
-    filter: hue-rotate(137deg) !important;
-}
+/*     fix app tab align */
+    .ZAppTabBorder {
+        top: 10px !important;
+    }
+    #skin_container_app_chooser > div > table {
+        margin-top: 7px !important;
+    }
+    .ZAppTab {
+        height: 19px !important;
+    }
+    .ZSelected.ZAppTab {
+        padding-top: 0px !important;
+    }
+    .ZSelected .ZAppTabTable .ZWidgetTitle {
+        padding-top: 0.5px !important;
+    }
+    .console_inset_app_l .DwtHorizontalSash {
+        margin-top: 2px !important;
+    }
 }
