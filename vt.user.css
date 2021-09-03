@@ -2,7 +2,7 @@
 @name VT uDark
 @namespace github.com/bluelul/uservt
 @homepageURL https://github.com/bluelul/uservt/blob/main/vt.user.css
-@version 1.0.10
+@version 1.0.11
 @updateURL https://github.com/bluelul/uservt/raw/main/vt.user.css
 @description VT Dark Theme
 @author bluelul
@@ -52,7 +52,7 @@ body:hover {
     .addrBubble:hover, .ZHover .ZMenuItemBorder, .acRow-selected, .ZActive .ZMenuItemBorder, .DwtCalendarDay-active, .calendar_day_separator, .DwtCalendarButton-active, .DwtCalendarDay-hover, .DwtCalendarDay:hover {
         background-color: var(--darkC5)!important;
     }
-    .RowOdd:hover, .RowEven:hover, .DwtTreeItem:hover, .shortcutDescription-prefs, .WindowOuterContainer, .ZTreeItemCheckbox, .ZActive .ZAppTabBorder, .calendar_month_cells_td-Selected {
+    .RowOdd:hover, .RowEven:hover, .DwtTreeItem:hover, .shortcutDescription-prefs, .WindowOuterContainer, .ZTreeItemCheckbox, .ZActive .ZAppTabBorder, .calendar_month_cells_td-Selected, .ZToastBG {
         background-color: var(--darkC3)!important;
     }
 
@@ -79,6 +79,9 @@ body:hover {
     }
     #skin_container_search .ZmSearchToolbar { 
         background-color: rgba(255,255,255,0.2)!important;
+    }
+    .Displayimages {
+        background-color: #2c2c00!important;
     }
     table[id^="zli__CLM"][id$="_tableBody"], table[id^="zli__CLW"][id$="_tableBody"], table[id*="DWT"][id$="_tableBody"], tr[style*="background:-webkit-linear-gradient(top,#FFFFFF, #98b6e9);"] {
         background: var(--darkC5)!important;
@@ -107,7 +110,7 @@ body:hover {
         text-decoration: none!important;
     }
     /* border */
-    .RowDouble, .RowDouble>TABLE, .MessageHeaderAttachments, #skin_tr_toolbar>TD, .ZmMailMsgView, .DwtListView, .ZToolbarButtonBorder, .overviewHeader>TABLE, .overviewHeader-actioned>TABLE, #skin_container_tree, .ZSelected .ZAppTabBorder, #skin_container_tree_footer, .DwtCalendarDow, .DwtCalendarDay-hover, .DwtTreeItem-selected, .ZmPrefView, .DwtCalendarDay-today, .ZmContactSplitView, .ZmContactView, .ZmEditContactView, .ZmContactInfoView, .ZmContactSimpleView, .AlphabetBarTable .DwtButton, .AlphabetBarTable .DwtButton-hover, .AlphabetBarTable .DwtButton-active, .ZmBriefcaseDetailListView, .ZmPreviewView, .ZButtonBorder, .ZmMailMsgView .MsgHeader, .ZmMailMsgView .MsgHeaderTable, .addrBubble, .addrBubble-selected, .addrBubble-actioned, .attachmentBubble, .DwtToolTip, .horizSep, .DwtMenu, .ActionMenu, .DwtSelectMenu, .ZMenuItemBorder, .addrBubbleContainer, .attBubbleContainer, .ZmComposeView .subjectField, .defaultSkin table.mceLayout tr.mceFirst td, .defaultSkin table.mceLayout, .defaultSkin .mceIframeContainer, .defaultSkin .mceButton, .defaultSkin table.mceListBoxEnabled:hover .mceText, .defaultSkin .mceListBoxHover .mceText, .defaultSkin .mceListBoxSelected .mceText, .defaultSkin table.mceListBoxEnabled:hover .mceOpen, .defaultSkin .mceListBoxHover .mceOpen, .defaultSkin .mceListBoxSelected .mceOpen, .defaultSkin .mceListBox .mceOpen, .defaultSkin .mceListBox .mceText, .defaultSkin .mceSplitButton a.mceAction, .defaultSkin .mceSplitButton a.mceOpen, .ZmAutocompleteListView,  .ZmAutocompleteListView TD, .shortcutListHeaderTd-prefs, .shortcutDescription-prefs, .shortcutKeys-prefs, .Row, .ZOptionsSectionTabView .ZSelected .ZTabBorder, .ZOptionsSectionTabView .ZTabBorder, .WindowOuterContainer, .WindowInnerContainer, .form .ZLoginButton, .form SELECT, .InvHeaderTable, .DwtCalendarWeekNoTitle, .DwtCalendarDay-active, input[type="text"], input[type="password"], #skin_spacing_app_row table, .LightWindowOuterContainer, .LightWindowInnerContainer, .calendar_view, .calendar_heading, .calendar_heading_day_tab, .calendar_grid_body_fbbar_td, .calendar_month_header_cells_text, .calendar_edit_notes_separator, table[id^="zli__CLW"][id$="_tableBody"], table[id*="DWT"][id$="_tableBody"], .ZmEditContactViewAddress, .contactHeaderCell {
+    .RowDouble, .RowDouble>TABLE, .MessageHeaderAttachments, #skin_tr_toolbar>TD, .ZmMailMsgView, .DwtListView, .ZToolbarButtonBorder, .overviewHeader>TABLE, .overviewHeader-actioned>TABLE, #skin_container_tree, .ZSelected .ZAppTabBorder, #skin_container_tree_footer, .DwtCalendarDow, .DwtCalendarDay-hover, .DwtTreeItem-selected, .ZmPrefView, .DwtCalendarDay-today, .ZmContactSplitView, .ZmContactView, .ZmEditContactView, .ZmContactInfoView, .ZmContactSimpleView, .AlphabetBarTable .DwtButton, .AlphabetBarTable .DwtButton-hover, .AlphabetBarTable .DwtButton-active, .ZmBriefcaseDetailListView, .ZmPreviewView, .ZButtonBorder, .ZmMailMsgView .MsgHeader, .ZmMailMsgView .MsgHeaderTable, .addrBubble, .addrBubble-selected, .addrBubble-actioned, .attachmentBubble, .DwtToolTip, .horizSep, .DwtMenu, .ActionMenu, .DwtSelectMenu, .ZMenuItemBorder, .addrBubbleContainer, .attBubbleContainer, .ZmComposeView .subjectField, .defaultSkin table.mceLayout tr.mceFirst td, .defaultSkin table.mceLayout, .defaultSkin .mceIframeContainer, .defaultSkin .mceButton, .defaultSkin table.mceListBoxEnabled:hover .mceText, .defaultSkin .mceListBoxHover .mceText, .defaultSkin .mceListBoxSelected .mceText, .defaultSkin table.mceListBoxEnabled:hover .mceOpen, .defaultSkin .mceListBoxHover .mceOpen, .defaultSkin .mceListBoxSelected .mceOpen, .defaultSkin .mceListBox .mceOpen, .defaultSkin .mceListBox .mceText, .defaultSkin .mceSplitButton a.mceAction, .defaultSkin .mceSplitButton a.mceOpen, .ZmAutocompleteListView,  .ZmAutocompleteListView TD, .shortcutListHeaderTd-prefs, .shortcutDescription-prefs, .shortcutKeys-prefs, .Row, .ZOptionsSectionTabView .ZSelected .ZTabBorder, .ZOptionsSectionTabView .ZTabBorder, .WindowOuterContainer, .WindowInnerContainer, .form .ZLoginButton, .form SELECT, .InvHeaderTable, .DwtCalendarWeekNoTitle, .DwtCalendarDay-active, input[type="text"], input[type="password"], #skin_spacing_app_row table, .LightWindowOuterContainer, .LightWindowInnerContainer, .calendar_view, .calendar_heading, .calendar_heading_day_tab, .calendar_grid_body_fbbar_td, .calendar_month_header_cells_text, .calendar_edit_notes_separator, table[id^="zli__CLW"][id$="_tableBody"], table[id*="DWT"][id$="_tableBody"], .ZmEditContactViewAddress, .contactHeaderCell, .Displayimages {
         border-color: transparent!important;
     }
     .DwtCalendarButton-hover, .DwtCalendarButton-active {
@@ -165,6 +168,9 @@ body:hover {
     }
     .DwtToolTip, .DwtMenu, .ActionMenu, .DwtSelectMenu, .ZmAutocompleteListView, .WindowInnerContainer, .WindowOuterContainer {
         box-shadow: 5px 5px 15px var(--darkC2)!important;
+    }
+    .ZToastBG {
+        box-shadow: 1px 1px 8px var(--darkC3)!important;
     }
     .addrBubbleContainer, .ZmComposeView .subjectField {
         border-bottom: 1px dashed var(--mainMid)!important;
